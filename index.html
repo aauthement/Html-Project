@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashton's Self Portrait</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+    padding-bottom: 930px;
+  margin: 1;
+  font-family: Arial;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 4px solid #ccc;
+  background-color: #f1f1f1;
+  
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+    float: left;
+  color: black;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+    transition: 0.3s;
+  font-size: 17px;
+    
+    
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  height: 300px;
+  display: none;
+    background-color: white
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1050px;
+  margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #3498DB;
+}
+
+.right {
+  right: 0;
+  background-color: #FFC300;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.centered img {
+  width: 200px;
+
+
+}  
+
+    .main > .tab {
+        padding: 10px;
+    }
+    
+    .row > .main {
+        padding: 10px;
+    }
+    
+    
+.row {
+  margin: 8px-16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+    height: auto;
+   
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}    
+    
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<h1>Living the Student-Athlete Life</h1>
+<hr>   
+<h2>Ashton Authement</h2>
+
+    </div>
+ 
+
+    
+<div class="split left">
+  <div class="centered">
+    <img src="./images%20/book_stack.png">
+   
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="./images%20/sports.png">
+
+  </div>
+</div>
+ 
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Info')">Info</button>
+  <button class="tablinks" onclick="openCity(event, 'Academics')">Academics</button>
+  <button class="tablinks" onclick="openCity(event, 'Athletics')">Athletics</button>
+     <button class="tablinks" onclick="openCity(event, 'Influences')">Influences</button>
+    
+</div>
+
+<div id="Info" class="tabcontent">
+  <h3>Info</h3>
+  <p>My name is Ashton Authement, and I have been living as a student athlete my entire life. My desire and drive for learning, whether that be on the field or in the classroom, especially learning about problem solving and how things worked started early and has continued to grow.  
+In the classroom, I found science and mathematics were strong fits for me. I remember in elementary school when my teacher would give the class timed math worksheets, I was the first student to finish every time. Whenever I completed a math assignment early, my teacher would give me another worksheet to complete. I remember being very excited to do and learn more math. In the science lab, I was also a diligent student that went above and beyond, doing multiple trials in experiments to learn as much as I could. My strong desire to learn and grow continued through middle school and high school and that desire remains today. 
+      Outside the classroom, as an athlete, I learned life lessons of being discipline in practicing and training hard, learning to be creative and strategic on the field, and supporting cooperation to achieve team goals. In both experiences, I have challenged myself by thinking creatively, asking thoughtful questions, not being afraid to make mistakes, and taking a proactive approach to learning.</p>
+</div>
+
+<div id="Academics" class="tabcontent">
+  <h3>Academics</h3>
+  <p>
+    As a former catholic high school student I am taught to live a life of faith, scholarship, and community. My school is a close-knit campus environment where we support one another with a sense of family and belonging. We are engaged in the community, volunteer countless hours in service of others, and participate in local and state government on issues relevant to our futures. At school I participate in four school organizations (Key Club, Environmental Club, Peer Ministry, Student Ambassador) all of which involve community service and volunteer work. Participation in these clubs have shown me there are many problems which face our youth in today's pressure filled society. As a teenager myself, I can relate to these problems and have a strong desire to help others overcome them. My work ethic in the community translates in the classroom. I took multiple AP and honors classes and achieved multiple scholarships. I was so proud to hear that I was valedictorian as well.
+</div>
+
+<div id="Athletics" class="tabcontent">
+  <h3>Athletics</h3>
+  <p>
+    Throughout my life I have played four sports: football, basketball, baseball, and track & field. I have played baseball ever since I was four years old, and the other sports I caught along with as I entered grade school. I earned many metals and all-star selections in my early years of the sports, but as soon as I hit high school, I realized how hard this will be. I continued to play three sports in high school, with my main focus being on baseball. During Junior year, I had a shoulder injury that ended my baseball career, and then that's when football took over. 
+      
+      Football has had a major impact on my life. The first time I officially played was my freshman year of high school. At the time I knew very little about the game, but I was fortunate to have good coaches and senior players to mentor me in the many aspects of the sport. Over four years, football has taught me passion, work ethic, sacrifice, humility, and how to be a good team mate. Most importantly, however, it has taught me how to use those skills for the good of others. It has taught me how to be a leader. 
+</p>
+</div>
+
+<div id="Influences" class="tabcontent">
+  <h3>Influences</h3>
+    <h5>Academics</h5>
+  <p>My goal is to study mechanical engineering in college. Ever since I was a small child I loved to take things apart and put them back together. My childhood toys consisted of Legos, Lincoln logs, train sets, and puzzles. I would sit for hours, focused on assembling the pieces, until I completed it. In some sense, it only seems natural that I become an engineer. Both of my parents are engineering professionals serving the US Navy, and I have always been inspired by the work they do in support of our service members.</p>
+    <h5>Athletics</h5>
+    <p>My main influence of the sports baseball and track came from my father. Those were the sports he played in high school back in the day. My decsion to play football and basketball were based on watching professional athletes play. My favorite players growing up were Drew Brees and Chris Paul and they truly inspired me to enjoy what I truly love.</p>
+</div>
+    
+    
+<div class="clearfix"></div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+   <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/speech.jpg" alt="valedictorian" class="image">
+            <div class="overlay">
+            <div class="text">Valedictorian</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/awards_night.jpg" alt="awards" class="image">
+            <div class="overlay">
+            <div class="text">National Honors Society</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/catch_rain.jpg" alt="football" class="image">
+            <div class="overlay">
+            <div class="text">Football</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/basketball.jpeg" alt="basketball" class="image">
+            <div class="overlay">
+            <div class="text">Basketball</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+<div class="row">
+   <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/schoolkids.jpeg" alt="Mr. Titan Award" class="image">
+            <div class="overlay">
+            <div class="text">Student Ambassador</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/freelutt.jpeg" alt="principal" class="image">
+            <div class="overlay">
+            <div class="text">Honor Roll</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/baseball.jpg" alt="baseball" class="image">
+            <div class="overlay">
+            <div class="text">Baseball</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+        <div class="container">
+            <img src="./images%20/Track.jpeg" alt="track" class="image">
+            <div class="overlay">
+            <div class="text">Track and Field</div>
+        </div>
+       </div> 
+    </div>
+  </div>
+    
+    </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+
+  <h3>The Next Chapter</h3>
+  <p>Because of the hardwork and dedication I put into both the "student" and "athlete" aspects of my life, I will be pursuing an engineering degree and playing college football at my dream school, UCLA. I can't wait to see what the future holds for me.</p>
+    <p><a href="http://www.instagram.com/ashton25">Instagram</a> <a href="http://www.twitter.com/aauthement15">Twitter</a></p>
+</div>  
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!-- END MAIN -->
+
+</body>
+</html>
+
